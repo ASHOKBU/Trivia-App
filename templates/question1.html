@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+</head>
+<body>
+    <h2>Who is the best cricketer in the world?</h2>
+    <h3>Options are:</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="checkbox" name="answer" id="ans1" value="Sachin Tendulkar">
+        <label for="ans1">A) Sachin Tendulkar</label><br>
+        <input type="checkbox" name="answer" id="ans2" value="Virat Kohli">
+        <label for="ans2">B) Virat Kohli</label><br>
+        <input type="checkbox" name="answer" id="ans3" value="Adam Gilchirst"> 
+        <label for="ans3">C) Adam Gilchirst</label><br>
+        <input type="checkbox" name="answer" id="ans4" value="Jacques Kallis">
+        <label for="ans4">D) Jacques Kallis</label> <br>
+        <input type="submit" value="NEXT">
+</form>
+</body>
+</html>

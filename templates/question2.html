@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+</head>
+<body>
+    <h2>What are the colors in the Indian national flag</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="checkbox" name="answer" id="ans1" value="White">
+        <label for="ans1">A) White</label><br>
+        <input type="checkbox" name="answer" id="ans2" value="Yellow">
+        <label for="ans1">B) Yellow</label><br>
+        <input type="checkbox" name="answer" id="ans2" value="Orange">
+        <label for="ans1">C) Orange</label><br>
+        <input type="checkbox" name="answer" id="ans2" value="Green">
+        <label for="ans1">D) Green</label><br>
+        <input type="submit" value="NEXT">
+</form>
+</body>
+</html>
